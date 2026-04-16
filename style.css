@@ -16,16 +16,17 @@ body {
 .header {
     height: 800px;
     background: #E1FF8F;
-    padding-left: 100px;   
     padding-top: 120px;    
+    position: relative;
+    overflow-x: clip;
     padding-bottom: 80px;  
 }
 
 .main__text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    width: 769px;
-    height: 156px;
+    width: auto;
+    height: auto;
     font-size: 64px;
     line-height: 100%;
     font-style: Bold;
@@ -68,7 +69,6 @@ body {
 
 .animation__list {
     position: absolute;
-    left: -30px;
     top: 710px;
     width: 100%;
     height: auto;
@@ -86,7 +86,6 @@ body {
     white-space: nowrap;
     display: flex;
     gap: 51px;
-    width: calc(100% + 30px);
     overflow-x: hidden;
 
 }
@@ -108,8 +107,7 @@ body {
 
 .game {
     max-width: 1440px;          
-    margin: 80px auto 0 auto;   
-    padding: 0px;
+    margin: 80px auto 0 auto;  
 }
 
 .game__name {
@@ -135,12 +133,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: flex-start;
+    margin-bottom: 100px;
 }
 
 .cart__game {
     width: 378px;
     background: #F5F5F5;
     border-radius: 30px;
+    padding-bottom: 20px;
 } 
 
 .cart-image {
@@ -155,9 +156,10 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: #202027;
-    margin-bottom: 20px;
-    padding-left: 20px;
     padding-top: 20px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px; 
 }
 
 .cart__game-name {
@@ -166,7 +168,30 @@ body {
     font-size: 32px;
     line-height: 100%;
     color: #202027;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     padding-left: 20px;
+    padding-right: 20px;
+
 }
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header__button {
+    cursor: pointer;
+}
+
+.cart__game-link {
+    text-decoration: none;
+    display: block;
+    width: 378px;
+    transition: transform 0.3s ease;
+}
+
+.cart__game-link:hover {
+    transform: scale(1.05);
+}
