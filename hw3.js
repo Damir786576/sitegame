@@ -3,7 +3,7 @@ let password = 'пароль';
 let password2 = prompt('Введите пароль');
 const lowerCaseString = password2.toLocaleLowerCase();
 
-if (lowerCaseString == password) {
+if (lowerCaseString === password) {
     console.log('Пароль введен верно');
 }
 else {
