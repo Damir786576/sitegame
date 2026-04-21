@@ -15,7 +15,8 @@ body {
 
 
 .header {
-    height: 800px;
+    min-height: 800px;
+    height: auto;
     background: #E1FF8F;
     padding-top: 120px;    
     position: relative;
@@ -70,7 +71,7 @@ body {
 
 .animation__list {
     position: absolute;
-    top: 710px;
+    bottom: 0;
     width: 100%;
     height: auto;
     padding-top: 27px;
@@ -88,8 +89,8 @@ body {
     display: flex;
     gap: 51px;
     overflow-x: hidden;
-
 }
+
 
 .star {
     width: 36px;
@@ -335,6 +336,7 @@ body {
     background: #BDED35;
     padding: 60px 0;
     text-align: center;
+    width: 100%;
 }
 
 .footer__text {
