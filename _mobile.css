@@ -33,4 +33,52 @@
 .game {
     display: none;
 }    
+
+.minigame__title {
+    margin-top: 40px;
+    gap: 48px;
+    font-size: 40px;
+}
+
+.play__game {
+        width: 100% !important;
+        flex-direction: column !important;
+        height: auto !important;
+        border-radius: 30px !important;
+        overflow: hidden !important;
+    }
+    
+.play__image {
+        width: 100% !important;
+        border-radius: 30px 30px 0 0 !important;
+}
+    
+.play__card {
+        width: 100% !important;
+        border-radius: 0 0 30px 30px !important;
+        padding: 30px 20px !important;
+        text-align: left;
+}
+    
+.play__name {
+        font-size: 28px;
+}
+    
+.play__title {
+        font-size: 16px;
+        max-width: 100%;
+}
+    
+.play__button {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+}
+.minigame {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.footer__text {
+    font-size: 16px !important;
+}
 }
