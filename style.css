@@ -15,7 +15,8 @@ body {
 
 
 .header {
-    height: 800px;
+    min-height: 800px;
+    height: auto;
     background: #E1FF8F;
     padding-top: 120px;    
     position: relative;
@@ -70,7 +71,7 @@ body {
 
 .animation__list {
     position: absolute;
-    top: 710px;
+    bottom: 0;
     width: 100%;
     height: auto;
     padding-top: 27px;
@@ -88,8 +89,8 @@ body {
     display: flex;
     gap: 51px;
     overflow-x: hidden;
-
 }
+
 
 .star {
     width: 36px;
@@ -195,4 +196,152 @@ body {
 
 .cart__game-link:hover {
     transform: scale(1.05);
+}
+
+.minigame {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+.minigame__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: left;
+    margin-bottom: 60px;
+    color: #FFFFFF;     
+}
+
+.minigame__cart {
+    width: 100%;
+}
+
+.play {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.play__game {
+    display: flex;
+    width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.play__image {
+    border-radius: 30px 0 0 30px;
+}
+
+.play__game-right .play__image {
+    border-radius: 0 30px 30px 0;
+}
+
+.play__card {
+    border-radius: 0 30px 30px 0;
+}
+
+.play__game-right .play__card {
+    border-radius: 30px 0 0 30px;
+}
+
+.play__game-left {
+    flex-direction: row;
+}
+
+.play__game-left .play__image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.play__game-left .play__card {
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column; 
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 60px;
+}
+
+.play__game-right {
+    flex-direction: row-reverse;
+}
+
+.play__game-right .play__image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.play__game-right .play__card {
+    width: 50%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 60px;
+}
+
+.play__card {
+    background: white;
+}
+
+.play__name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #202027;
+    margin-bottom: 20px;
+}
+
+.play__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #202027;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 450px;
+}
+
+.play__button {
+    width: 200px;
+    padding: 16px 0;
+    background: #202027;
+    border: none;
+    border-radius: 60px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play__game {
+    transition: transform 0.3s ease;
+}
+
+.play__game:hover {
+    transform: scale(1.02);
+}
+
+.footer {
+    background: #BDED35;
+    padding: 60px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
 }
